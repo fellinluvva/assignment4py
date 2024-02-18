@@ -9,11 +9,13 @@ def main():
     service.add_user("admin", 5000)
     service.add_user("user", 500)
 
+    # Load data from csv
     initial_data = load_from_csv("datapack.csv")
 
     for item in initial_data:
         service.add_stuff(item)
 
+    # Main menu loop for terminal
     while True:
         print("\nWelcome to the Electronic devices Rent")
         print("1. List all items")
