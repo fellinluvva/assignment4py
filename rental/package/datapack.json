@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Electronics",
+    "name": "Mouse",
+    "description": "High-performance mouse",
+    "price": 50,
+    "brand": "Logitech"
+  }, {
+    "type": "Electronics",
+    "name": "Laptop",
+    "description": "High-performance laptop",
+    "price": 1000,
+    "brand": "Dell"
+  }, {
+    "type": "Electronics",
+    "name": "Tuf GAMING",
+    "description": "High-performance PC",
+    "price": 2300,
+    "brand": "Asus"
+  }, {
+    "type": "Electronics",
+    "name": "Keyboard",
+    "description": "High-performance keyboard",
+    "price": 60,
+    "brand": "HP"
+  }]
