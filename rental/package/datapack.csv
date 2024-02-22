@@ -1,5 +1,4 @@
-type,name,description,price,brand
-Electronics,Mouse,High-performance mouse,50,Logitech
-Electronics,Laptop,High-performance laptop,1000,Dell
-Electronics,Tuf GAMING,High-performance PC,2300,Asus
-Electronics,Keyboard,High-performance keyboard,60,HP
+type,name,description,price,brand,material
+Electronics,Mouse,Gaming hitech mouse w 5 keys,50.0,Logitech,
+Furniture,Lounge,Comfortable gaming seat,110.0,,Carbon
+Electronics,PC,Gaming PC,2200.0,Asus,

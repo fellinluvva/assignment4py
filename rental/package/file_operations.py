@@ -1,6 +1,6 @@
 import csv
 import json
-from stuff import Electronics, Furniture
+from stuff import *
 
 
 def save_to_csv(data, filename):
@@ -40,9 +40,12 @@ def load_from_json(filename):
         serialized_data = json.load(jsonfile)
         for item_data in serialized_data:
             if item_data['type'] == 'Electronics':
-                data.append(
-                    Electronics(item_data['name'], item_data['description'], item_data['price'], item_data['brand']))
+                data.append(Electronics(item_data['name'], item_data['description'], item_data['price'], item_data['brand']))
             elif item_data['type'] == 'Furniture':
-                data.append(
-                    Furniture(item_data['name'], item_data['description'], item_data['price'], item_data['material']))
+                data.append(Furniture(item_data['name'], item_data['description'], item_data['price'], item_data['material']))
     return data
+
+
+
+
+
