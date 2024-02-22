@@ -6,9 +6,8 @@ from rental.package.stuff import Furniture, Electronics
 def main():
     service = RentService()
 
-    # Add users
-    service.add_user("admin", 5000)
-    service.add_user("user", 500)
+    users_data_csv = load_users_from_csv("users.csv")
+    service.users = users_data_csv
 
     # Load data from csv
     initial_data = load_from_csv("datapack.csv")

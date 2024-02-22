@@ -46,6 +46,14 @@ def load_from_json(filename):
     return data
 
 
-
-
+def load_users_from_csv(filename):
+    users = {}
+    with open(filename, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            user_id = row['user_id']
+            balance = float(row['balance'])
+            purchase_history = row.get('purchase_history', '').split(', ')
+            users[user_id] = {'balance': balance, 'purchase_history': purchase_history}
+    return users
 
