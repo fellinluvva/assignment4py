@@ -44,8 +44,3 @@ def load_from_json(filename):
             elif item_data['type'] == 'Furniture':
                 data.append(Furniture(item_data['name'], item_data['description'], item_data['price'], item_data['material']))
     return data
-
-
-
-
-
