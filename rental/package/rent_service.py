@@ -32,16 +32,21 @@ class RentService:
             return
 
         user_info = self.users[user_id]
-        purchase_history = user_info['purchase_history']
         user_balance = user_info['balance']
 
         print(f"User: {user_id}")
         print(f"Balance: ${user_balance}")
 
-        if purchase_history:
+        # Load transaction data from JSON file
+        with open("transactions.json", "r") as json_file:
+            transactions = json.load(json_file)
+
+        if transactions:
             print("Purchase history:")
-            for item in purchase_history:
-                print(f"{item.name} - ${item.price}")
+            for transaction in transactions:
+                if transaction["buyer_id"] == user_id:
+                    print(f"Timestamp: {transaction['timestamp']}")
+                    print(f"Item: {transaction['item_name']} - ${transaction['price']}")
         else:
             print("No purchase history.")
 
