@@ -1,6 +1,10 @@
 {
     "admin": {
-        "balance": 4950.0,
-        "purchase_history": [
-            "",
-            
+        "balance": 2750.0,
+        "purchase_history": []
+    },
+    "user": {
+        "balance": 500.0,
+        "purchase_history": []
+    }
+}

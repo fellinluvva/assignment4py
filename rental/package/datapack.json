@@ -19,5 +19,12 @@
         "description": "Gaming PC",
         "price": 2200.0,
         "brand": "Asus"
+    },
+    {
+        "type": "Electronics",
+        "name": "Keyboard",
+        "description": "test",
+        "price": 123.0,
+        "brand": "ASUS"
     }
 ]
